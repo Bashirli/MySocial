@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C8C7C7"
+    android:fillViewport="true"
+    tools:context=".fragment.AddPostFragment">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:id="@+id/constraintLayout5"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="#004AAD"
+          android:padding="10dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent">
+
+
+         <TextView
+             android:id="@+id/nameOfPublisher"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="12dp"
+             android:layout_marginTop="28dp"
+             android:text="TextView"
+             android:textColor="@color/white"
+             android:textSize="30dp"
+
+             android:textStyle="bold"
+             app:layout_constraintStart_toEndOf="@+id/imageView7"
+             app:layout_constraintTop_toTopOf="parent" />
+
+         <ImageView
+             android:id="@+id/imageView7"
+             android:layout_width="115dp"
+             android:layout_height="115dp"
+
+             android:layout_marginStart="4dp"
+             android:layout_marginTop="4dp"
+
+             android:src="@drawable/circlelogo"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+
+         <TextView
+             android:id="@+id/textView8"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="12dp"
+             android:layout_marginTop="12dp"
+             android:drawableStart="@android:drawable/stat_notify_sync"
+             android:gravity="center"
+             android:text=" Hamıya paylaş"
+             android:textColor="@color/teal_200"
+             android:textStyle="bold"
+             app:layout_constraintStart_toEndOf="@+id/imageView7"
+             app:layout_constraintTop_toBottomOf="@+id/nameOfPublisher" />
+
+         <TextView
+             android:id="@+id/goBackAddPost"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:drawableStart="@drawable/goback"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+      <EditText
+          android:id="@+id/editTextTextMultiLine"
+          android:layout_width="match_parent"
+          android:layout_height="370dp"
+          android:layout_marginStart="2dp"
+          android:layout_marginTop="8dp"
+          android:layout_marginEnd="2dp"
+          android:background="@drawable/border"
+          android:elevation="10dp"
+          android:ems="10"
+         android:textColor="@color/black"
+          android:textColorHint="#E60389FF"
+          android:gravity="start|top"
+          android:hint="Nə demək istədiyini yaz..."
+          android:inputType="textMultiLine"
+          android:padding="5dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+
+      <TextView
+          android:id="@+id/imageSelectButton"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="228dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginEnd="85dp"
+          android:background="@drawable/bluetext"
+          android:drawableStart="@android:drawable/ic_menu_add"
+          android:padding="7dp"
+          android:text="Şəkil əlavə et "
+          android:textColor="@color/white"
+          android:textSize="20dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+
+      <ImageView
+          android:id="@+id/selectingImage"
+          android:layout_width="320dp"
+          android:layout_height="320dp"
+          android:layout_marginTop="40dp"
+          android:padding="5dp"
+          android:elevation="10dp"
+          android:src="@drawable/sekilsec"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/imageSelectButton" />
+
+      <Button
+          android:id="@+id/button3"
+          android:layout_width="115dp"
+          android:layout_height="73dp"
+          android:layout_marginStart="155dp"
+          android:layout_marginTop="54dp"
+          android:layout_marginEnd="152dp"
+
+          android:layout_marginBottom="24dp"
+          android:background="@drawable/paylasbutton"
+          android:foreground="@drawable/paylasbutton"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/selectingImage" />
+
+      <TextView
+          android:id="@+id/imageHide"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="16dp"
+          android:layout_marginTop="10dp"
+
+          android:textColor="@color/white"
+          android:background="@drawable/bluetext"
+          android:drawableStart="@android:drawable/presence_busy"
+          android:padding="7dp"
+          android:text=" Şəkil seçməni bağla"
+          android:textSize="20dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

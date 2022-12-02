@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:background="#E1E0E0"
+    android:layout_height="match_parent"
+    tools:context=".fragment.profile.SettingsFragment">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout7"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:foreground="@drawable/border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="72dp"
+            android:text="Tənzimləmələr"
+            android:textColor="#004AAD"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/goBackSettings"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/goBackSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/goback"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:padding="4dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout7">
+        <TextView
+
+            android:id="@+id/hesabAyar"
+            android:background="@drawable/whitetext"
+            android:elevation="10dp"
+            android:layout_width="match_parent"
+            android:text="Hesab ayarları"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:drawableStart="@android:drawable/ic_menu_more"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/hesabAyarLinear"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/myProfile"
+                android:background="@drawable/whitetext"
+                android:elevation="10dp"
+                android:layout_width="match_parent"
+                android:text="Profilimi düzənlə"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:drawableStart="@android:drawable/ic_menu_edit"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:id="@+id/changePass"
+                android:background="@drawable/whitetext"
+                android:elevation="10dp"
+                android:layout_width="match_parent"
+                android:text="Şifrəni dəyiş"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:drawableStart="@android:drawable/ic_lock_idle_lock"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:id="@+id/publishMyProfile"
+                android:background="@drawable/whitetext"
+                android:elevation="10dp"
+                android:layout_width="match_parent"
+                android:text="Profilimi paylaş"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="2dp"
+                android:drawableStart="@android:drawable/ic_menu_share"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:padding="4dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/lin2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lin1">
+        <TextView
+            android:id="@+id/proqramSettings"
+            android:background="@drawable/whitetext"
+            android:elevation="10dp"
+            android:layout_width="match_parent"
+            android:text="Proqram ayarları"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:drawableStart="@android:drawable/ic_menu_more"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/proqramAyarLinear"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/destekXetti"
+                android:background="@drawable/whitetext"
+                android:elevation="10dp"
+                android:layout_width="match_parent"
+                android:text="Dəstəklə əlaqə"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="5dp"
+                android:drawableStart="@android:drawable/sym_action_call"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:padding="4dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/lin3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lin2">
+        <TextView
+            android:id="@+id/exit"
+            android:background="@drawable/whitetext"
+            android:elevation="10dp"
+            android:layout_width="match_parent"
+            android:text="Çıxış"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:drawableStart="@android:drawable/ic_menu_more"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/exitLinear"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/exitProfile"
+                android:background="@drawable/whitetext"
+                android:elevation="10dp"
+                android:layout_width="match_parent"
+                android:text="Hesabdan çıxış"
+                android:textColor="#FF0000"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:drawableStart="@android:drawable/ic_delete"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:id="@+id/closeApp"
+                android:background="@drawable/whitetext"
+                android:elevation="10dp"
+                android:layout_width="match_parent"
+                android:text="Proqramdan çıx"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="2dp"
+                android:drawableStart="?attr/actionModeCloseDrawable"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
