@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.logreg.ChangePassLoginFragment">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:id="@+id/constraintLayout"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:foreground="@drawable/border"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent">
+
+
+         <ImageView
+             android:id="@+id/imageView"
+             android:layout_width="50dp"
+             android:layout_height="match_parent"
+             android:foreground="@drawable/border"
+             android:scaleType="fitXY"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             app:srcCompat="@drawable/logo" />
+
+         <TextView
+             android:id="@+id/textView2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="8dp"
+             android:text="MySocial"
+             android:textColor="#004AAD"
+             android:textSize="25dp"
+             android:textStyle="bold"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="@+id/imageView"
+             app:layout_constraintTop_toTopOf="parent" />
+
+         <TextView
+             android:id="@+id/goBackForgot"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="5dp"
+             android:layout_marginEnd="16dp"
+             android:drawableStart="@drawable/goback"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+      <EditText
+          android:id="@+id/editTextTextEmailAddress"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="50dp"
+          android:layout_marginTop="95dp"
+          android:layout_marginEnd="50dp"
+          android:background="@drawable/whitetext"
+          android:elevation="10dp"
+          android:ems="10"
+          android:hint="Email"
+          android:inputType="textEmailAddress"
+          android:padding="10dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+      <TextView
+          android:id="@+id/textView12"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="158dp"
+          android:layout_marginTop="36dp"
+          android:layout_marginEnd="159dp"
+          android:background="@drawable/bluetext"
+          android:padding="15dp"
+          android:text="Davam et"
+          android:textColor="@color/white"
+          android:textSize="15dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+      <TextView
+          android:id="@+id/textView14"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="41dp"
+          android:layout_marginTop="73dp"
+          android:layout_marginEnd="41dp"
+          android:gravity="center"
+          android:text="Şifrəsini dəyişmək istədiyiniz\nhesabın emailini daxil edin."
+          android:textColor="@color/black"
+          android:textSize="25dp"
+          android:textStyle="bold"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
